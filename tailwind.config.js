@@ -4,8 +4,13 @@ module.exports = {
       './*.html',
   ],
   theme: {
+    colors: {
+      'nav': '#343C4F',
+      'aside':'#4A799B',
+      'textDark':'#101A30',
+    },
     extend: {},
   },
   plugins: [],
-};
+}
 

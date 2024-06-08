@@ -603,6 +603,18 @@ video {
   width: 66.666667%;
 }
 
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-3\/6 {
+  width: 50%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -672,6 +684,11 @@ video {
 .bg-bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(74 121 155 / var(--tw-bg-opacity));
+}
+
+.bg-bg-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(182 212 221 / var(--tw-bg-opacity));
 }
 
 .p-12 {

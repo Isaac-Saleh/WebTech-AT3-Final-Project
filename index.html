@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Isaac Saleh - Home</title>
     <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body class="h-screen">
-<header class="flex flex-row-reverse justify-between bg-nav-colour">
+<header class="flex flex-row-reverse justify-between bg-nav-colour lg:hidden">
     <h2 class="text-4xl pr-5 font-bold text-bg-dark">Home</h2>
     <button type="button" class="">
         <img class="m-4 w-14 h-14"  src="assets/img/hamburger.png" alt="Flyout Menu Icon"/>
     </button>
 </header>
-    <main class="bg-bg-light flex flex-col gap-20 h-[calc(100vh-88px)] overflow-auto">
-        <aside class="hidden">
+    <main>
+        <aside class="hidden lg:visible">
             <section>
                 <img class="" src="" alt="Profile Picture" />
                 <h2 class="text-4xl pr-5 font-bold text-aside-colour">Isaac Saleh</h2>
@@ -31,7 +31,7 @@
                         <a class="" href="projects.html">Projects</a>
                     </li>
                     <li>
-                        <a class="" href="my_work.html">My Work</a>
+                        <a class="" href="mywork.html">My Work</a>
                     </li>
                     <li>
                         <a class="" href="resume.html">Resume</a>
@@ -42,7 +42,7 @@
                 </ul>
             </nav>
             <footer>
-                <section id="socials">
+                <section>
                     <a class="" href="https://www.facebook.com/zac.saleh">
                         <img src="assets/images/f_logo_RGB-White_72.png" alt="Facebook icon" />
                     </a>
@@ -57,23 +57,23 @@
                 <p>(C) ZacBoy Apps & Web Design</p>
             </footer>
         </aside>
-
-        <img class=" px-10 py-20 w-full h-2/5 justify-self-center"
-             src="assets/img/placeholderimg.png"
-             alt="Image of coding or some shit">
-        <section class="p-6">
-            <h2 class="text-center font-bold text-6xl p-12 lg:hidden">Isaac Saleh</h2>
-            <h2 class="text-center font-bold text-4xl lg:hidden">Junior Software Developer</h2>
-        </section>
-        <section class="flex flex-col gap-16 items-center">
-            <button class=" bg-bg-dark text-6xl rounded-full p-6 w-1/2">
-                DownLoad CV
-            </button>
-            <button class=" bg-bg-dark text-6xl rounded-full p-6 w-1/2">
-                My Work
-            </button>
-        </section>
-
+        <div  class="bg-bg-light flex flex-col gap-20 h-[calc(100vh-88px)] overflow-auto">
+            <img class=" px-10 py-20 w-full  justify-self-center"
+                 src="assets/img/placeholderimg.png"
+                 alt="Image of coding or some shit">
+            <section class="p-6">
+                <h2 class="text-center font-bold text-6xl p-12 lg:hidden">Isaac Saleh</h2>
+                <h2 class="text-center font-bold text-4xl lg:hidden">Junior Software Developer</h2>
+            </section>
+            <section class="flex flex-col gap-16 items-center">
+                <button class=" bg-bg-dark text-6xl rounded-full p-6 w-1/2">
+                    DownLoad CV
+                </button>
+                <button class=" bg-bg-dark text-6xl rounded-full p-6 w-1/2">
+                    My Work
+                </button>
+            </section>
+        </div>
     </main>
 
 </body>

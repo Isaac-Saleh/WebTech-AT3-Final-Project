@@ -5,9 +5,10 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'nav': '#343C4F',
-      'aside':'#4A799B',
-      'textDark':'#101A30',
+      'nav-colour': '#343C4F',
+      'bg-dark':'#4A799B',
+      'primary-text-dark':'#101A30',
+      'bg-light':'#B6D4DD'
     },
     extend: {},
   },

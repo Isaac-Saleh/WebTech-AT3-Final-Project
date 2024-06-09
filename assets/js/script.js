@@ -1,5 +1,5 @@
-console.log("This is working")
-console.log(screen)
+
+//------------ Functionality for the fly out button -----------------//
 
 const menu = document.getElementById("flyoutMenu");
 document.addEventListener("DOMContentLoaded", function () {

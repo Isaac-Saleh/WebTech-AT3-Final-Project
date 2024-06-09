@@ -31,3 +31,13 @@ screen.orientation.addEventListener("change", function(event) {
         menu.classList.add("hidden");
     }
 });
+
+//---------------- Functionality to have menu bar listen for resize ----------------- //
+window.addEventListener("resize", function(event) {
+    if(window.innerWidth >= 820) {
+        menu.classList.remove("hidden");
+    }
+    else {
+        menu.classList.add("hidden");
+    }
+});

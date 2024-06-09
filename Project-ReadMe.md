@@ -50,4 +50,16 @@ web development.</p>
     </li>
 </ol>
 
+### Colour Scheme
+
+| Name           | RGB           | HEX     |
+|----------------|---------------|---------|
+| black          | 0, 0, 0       | #000000 |
+| white          | 255, 255, 255 | #FFFFFF |
+| big-stone      | 16, 26, 48    | #101A30 |
+| big-stone-80%  | 52, 60, 79    | #343C4F |
+| ziggurat-light | 218, 233, 238 | #DAE9EE |
+| hippie-blue    | 107, 158, 182 | #6B9EB6 |
+| wedge-wood     | 74, 121, 155  | #4A779B |
+
 

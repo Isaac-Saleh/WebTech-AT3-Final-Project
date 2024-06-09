@@ -1,7 +1,13 @@
 
-//------------ Functionality for the fly out button -----------------//
 
+//------------ Functionality for the fly out on load -----------------//
 const menu = document.getElementById("flyoutMenu");
+menu.classList.add("hidden");
+if(screen.availWidth >= 820) {
+    menu.classList.remove("hidden");
+}
+
+//------------ Functionality for the fly out button -----------------//
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.getElementById("flyoutButton");
     button.addEventListener("click", function (event) {
@@ -16,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 });
 
+//------------ Functionality for the fly out on orientation change -----------------//
 screen.orientation.addEventListener("change", function(event) {
     if(screen.availWidth >= 820) {
         menu.classList.remove("hidden");

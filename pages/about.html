@@ -5,17 +5,17 @@
     <title>Isaac Saleh - About</title>
     <link rel="stylesheet" href="../assets/css/site.css">
 </head>
-<body>
-    <header class="sticky flex flex-row-reverse justify-between bg-nav-colour">
+<body class="bg-bg-light">
+    <header class="sticky flex flex-row-reverse justify-between bg-nav-colour lg:hidden">
         <h2 class="text-4xl pr-5 font-bold text-aside-colour">About</h2>
         <button type="button" class="">
             <img class="m-4 w-20 h-20" src="../assets/img/hamburger.png" alt="Flyout Menu Icon" />
         </button>
     </header>
-    <main>
-        <aside class="bg-bg-dark w-7/12">
+    <main class="p-12 flex flex-col gap-y-20">
+        <aside class="bg-bg-dark w-7/12 hidden">
             <section>
-                <img class="p-6 w-full " src="../assets/img/Zac_Profile_Picture.png" alt="profile-picture" />
+                <img class="" src="../assets/img/profile-picture.png" alt="profile-picture" />
                 <h3 class="text-4xl text-center text-white">Isaac Saleh</h3>
                 <p>Junior Software Developer</p>
             </section>
@@ -31,7 +31,7 @@
                         <a href="projects.html">Projects</a>
                     </li>
                     <li>
-                        <a href="my_work.html">My Work</a>
+                        <a href="mywork.html">My Work</a>
                     </li>
                     <li>
                         <a href="resume.html">Resume</a>
@@ -44,43 +44,49 @@
             <footer>
                 <section id="socials">
                     <a class="" href="https://www.facebook.com/zac.saleh">
-                        <img src="assets/images/f_logo_RGB-White_72.png" alt="Facebook icon" />
+                        <img src="" alt="Facebook icon" />
                     </a>
                     <a class="" href="https://www.instagram.com/thatzacfella/">
-                        <img src="assets/images/Instagram_Glyph_White.png" alt="Instagram icon" />
+                        <img src="" alt="Instagram icon" />
                     </a>
                     <a class=""
                        href="https://www.linkedin.com/in/isaac-saleh/?trk=people-guest_people_search-card&originalSubdomain=au">
-                        <img src="assets/images/LI-In-Bug.png" alt="LinkedIn icon" />
+                        <img src="" alt="LinkedIn icon" />
                     </a>
                 </section>
                 <p>(C) ZacBoy Apps & Web Design</p>
             </footer>
         </aside>
-        <h1>Who am I?</h1>
-        <p>Hi, I'm Isaac Saleh...</p>
-        <p>I enjoy a challenge..</p>
-        <div>
-            <section>
-                <h3>Python</h3>
+        <section class="flex flex-col gap-y-12">
+        <h1 class="text-6xl">Who am I?</h1>
+        <p class="text-4xl font-medium tracking-wider leading-relaxed lg:text-2xl"><strong>Hi I’m Isaac Saleh</strong>, for the last 18 years I have dedicated
+            myself to mastering the Circus Arts. I have travelled the world and had amazing experiences. Over the past
+            few years I have turned my attention towards software development and have seen the parallels of practice,
+            attention to detail, and troubleshooting inherent to both art forms. I enjoy a challenge and strive for
+            high level delivery of product. Whether it is balancing on one-arm or delivering the perfect code, both
+            require an intimate mix of form and function to succeed. I look forward to working with you. </p>
+        </section>
+        <div class="grid grid-rows-2 grid-cols-2 gap-8 lg:grid-cols-4 lg:grid-rows-1">
+            <section class="max-w-lg overflow-hidden shadow-xl shadow-bg-dark rounded-3xl m-4 p-4 w-8/10 h-64">
+                <h3 class="text-center text-xl p-6">Python</h3>
                 <a href="">
                     <img src="" alt="">
                 </a>
             </section>
-            <section>
-                <h3>HTML & CSS</h3>
+            <section class="max-w-lg overflow-hidden shadow-xl shadow-bg-dark rounded-3xl m-4 p-4 w-8/10 h-64">
+                <h3 class="text-center text-xl p-6">HTML & CSS</h3>
                 <a href="">
                     <img src="" alt="">
                 </a>
             </section>
-            <section>
-                <h3>SQL</h3>
+            <section class="max-w-lg overflow-hidden shadow-xl shadow-bg-dark rounded-3xl m-4 p-4 w-8/10 h-64">
+                <h3 class="text-center text-xl p-6">SQL</h3>
                 <a href="">
                     <img src="" alt="">
                 </a>
             </section>
-            <section>
-                <h3>C# & .Net</h3>
+            <section class="max-w-lg overflow-hidden shadow-xl shadow-bg-dark rounded-3xl m-4 p-4 w-8/10 h-64">
+                <h3 class="text-center text-xl p-6">C# & .Net</h3>
                 <a href="">
                     <img src="" alt="">
                 </a>

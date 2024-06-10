@@ -6,84 +6,104 @@
     <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 <body>
-    <header class="sticky flex flex-row-reverse justify-between bg-nav-colour">
-        <h2 class="text-4xl pr-5 font-bold text-aside-colour">Projects</h2>
-        <button type="button" class="">
-            <img class="m-4 w-14 h-14" src="../assets/img/hamburger.png" alt="Flyout Menu Icon" />
-        </button>
-    </header>
-    <main>
-        <aside>
-            <section>
-                <img class="" href="" alt="profile-picture" />
-                <h3 class="">Isaac Saleh</h3>
-                <p>Junior Software Developer</p>
-            </section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="my_work.html">My Work</a>
-                    </li>
-                    <li>
-                        <a href="resume.html">Resume</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <footer>
-                <section id="socials">
-                    <a class="" href="https://www.facebook.com/zac.saleh">
-                        <img src="assets/images/f_logo_RGB-White_72.png" alt="Facebook icon" />
-                    </a>
-                    <a class="" href="https://www.instagram.com/thatzacfella/">
-                        <img src="assets/images/Instagram_Glyph_White.png" alt="Instagram icon" />
-                    </a>
-                    <a class=""
-                       href="https://www.linkedin.com/in/isaac-saleh/?trk=people-guest_people_search-card&originalSubdomain=au">
-                        <img src="assets/images/LI-In-Bug.png" alt="LinkedIn icon" />
-                    </a>
-                </section>
-                <p>(C) ZacBoy Apps & Web Design</p>
-            </footer>
-        </aside>
-        <h1>Current Projects</h1>
-        <div>
-            <section>
-                <h3>Translator App</h3>
-                <a href="">
-                    <img src="" alt="">
+<header class="flex flex-row-reverse justify-between bg-big-stone-80% lg:hidden">
+    <h2 class="text-4xl pr-5 font-bold text-wedge-wood my-auto">Projects</h2>
+    <button type="button" id="flyoutButton" class="">
+        <img class="m-4 w-20 h-20"  src="../assets/img/hamburger.png" alt="Flyout Menu Icon"/>
+    </button>
+</header>
+<main class="flex flex-col h-[calc(100lvh-80px)]
+            lg:flex-row lg:h-full">
+    <aside id="flyoutMenu"
+           class="absolute z-10 p-4 bg-wedge-wood text-white rounded w-4/5
+                min-h-[calc(100vh-90px)] lg:relative lg:w-1/5 lg:min-w-72 lg:h-lvh">
+        <section class="text-center">
+            <img class="w-60 h-60 p-4 object-cover rounded-full mx-auto" src="../assets/img/profile-picture.png" alt="Profile Picture" />
+            <h2 class="text-4xl pr-5 font-bold text-aside-colour">Isaac Saleh</h2>
+            <p class="lg:text-2xl">Junior Software Developer</p>
+        </section>
+        <nav class="text-center lg:my-14 lg:text-2xl">
+            <ul>
+                <li class="p-2 hover:text-primary-text-dark">
+                    <a class="" href="../index.html">Home</a>
+                </li>
+                <li class="p-2 hover:text-primary-text-dark">
+                    <a class="" href="about.html">About</a>
+                </li>
+                <li class="p-2 hover:text-primary-text-dark">
+                    <a class="" href="projects.html">Projects</a>
+                </li>
+                <li class="p-2 hover:text-primary-text-dark">
+                    <a class="" href="mywork.html">My Work</a>
+                </li>
+                <li class="p-2 hover:text-primary-text-dark">
+                    <a class="" href="resume.html">Resume</a>
+                </li>
+                <li class="p-2 hover:text-primary-text-dark">
+                    <a class="" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <footer class="mb-0">
+            <section class="text-center">
+                <a href="https://www.facebook.com/zac.saleh">
+                    <img class="w-10 m-2 inline"  src="../assets/img/f_logo_RGB-White_72.png" alt="Facebook icon" />
+                </a>
+                <a href="https://www.instagram.com/thatzacfella/">
+                    <img class="w-10 m-2 inline"  src="../assets/img/Instagram_Glyph_White.png" alt="Instagram icon" />
+                </a>
+                <a
+                        href="https://www.linkedin.com/in/isaac-saleh/?trk=people-guest_people_search-card&originalSubdomain=au">
+                    <img class="w-10 m-2 inline"  src="../assets/img/LI-In-Bug.png" alt="LinkedIn icon" />
                 </a>
             </section>
-            <section>
-                <h3>Contract Manager</h3>
-                <a href="">
-                    <img src="" alt="">
+            <p class="text-center lg:text-xl m-5">&#169; ZacBoy Apps & Web Design</p>
+        </footer>
+    </aside>
+    <div class="m-10 h-full"  id="main-container-projects">
+        <h1 class="m-5 text-6xl text-left lg:text-4xl">Current Projects</h1>
+        <div class="flex flex-col justify-evenly items-center
+                    xl:grid xl:grid-rows-2 xl:grid-cols-2 xl:gap-12 lg:p-10">
+            <section class="project-card max-w-lg shadow-xl shadow-big-stone-80% rounded-3xl p-4 w-full h-64">
+                <a class="w-full h-full flex flex-row" href="mywork.html">
+                    <section class="flex flex-col gap-6 p-4 w-2/3">
+                    <h3 class="text-center text-4xl p-4">Translator App</h3>
+                    <h3 class="text-center text-3xl ">Using C# & .NET Maui</h3>
+                    </section>
+                    <img class="w-1/3 h-28  object-contain mx-auto my-auto" src="../assets/img/c-sharp.png" alt="An image of a Python Logo">
                 </a>
             </section>
-            <section>
-                <h3>Wordle Game</h3>
-                <a href="">
-                    <img src="" alt="">
+            <section class="project-card max-w-lg shadow-xl shadow-big-stone-80% rounded-3xl  p-4 w-full h-64">
+                <a class="w-full h-full flex flex-row" href="mywork.html">
+                    <section class="flex flex-col gap-6 p-4 w-2/3">
+                        <h3 class="text-center text-4xl p-4">Contract Manager</h3>
+                        <h3 class="text-center text-3xl ">Using C# & .NET WPF</h3>
+                    </section>
+                    <img class="w-1/3 h-28  object-contain mx-auto my-auto" src="../assets/img/c-sharp.png" alt="An image of a HTML Logo">
+                </a>
+
+            </section>
+            <section class="project-card max-w-lg shadow-xl shadow-big-stone-80% rounded-3xl  p-4 w-full h-64">
+                <a class="w-full h-full flex flex-row" href="mywork.html">
+                    <section class="flex flex-col gap-6 p-4 w-2/3">
+                        <h3 class="text-center text-4xl p-4">Wordle Game</h3>
+                        <h3 class="text-center text-3xl ">Using Python</h3>
+                    </section>
+                    <img class="w-1/3 h-28  object-contain mx-auto my-auto" src="../assets/img/python.png" alt="An image of a HTML Logo">
                 </a>
             </section>
-            <section>
-                <h3>SQL Data Manager</h3>
-                <a href="">
-                    <img src="" alt="">
+            <section class="project-card max-w-lg shadow-xl shadow-big-stone-80% rounded-3xl  p-4 w-full h-64">
+                <a class="w-full h-full flex flex-row" href="mywork.html">
+                    <section class="flex flex-col gap-6 p-4 w-2/3">
+                        <h3 class="text-center text-4xl p-4">SQL Data Manger</h3>
+                        <h3 class="text-center text-3xl ">Using C#, .NET WPF & SQL</h3>
+                    </section>
+                    <img class="w-1/3 h-28  object-contain mx-auto my-auto" src="../assets/img/sql.png" alt="An image of a HTML Logo">
                 </a>
             </section>
         </div>
+    </div>
     </main>
+<script src="../assets/js/script.js"></script>
 </body>
 </html>

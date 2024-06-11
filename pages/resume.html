@@ -7,56 +7,59 @@
 </head>
 <body>
 <header class="flex flex-row-reverse justify-between bg-big-stone-80% lg:hidden">
-    <h2 class="text-4xl pr-5 font-bold text-wedge-wood my-auto">Projects</h2>
+    <h2 class="text-4xl pr-5 font-bold text-wedge-wood my-auto">Resume</h2>
     <button type="button" id="flyoutButton" class="">
         <img class="m-4 w-20 h-20"  src="../assets/img/hamburger.png" alt="Flyout Menu Icon"/>
     </button>
 </header>
-<main class="flex">
+<main class="flex flex-col h-[calc(100lvh-80px)]
+            lg:flex-row lg:h-full">
     <aside id="flyoutMenu"
-           class="absolute z-10 p-4 bg-wedge-wood text-white rounded w-4/5
-                min-h-[calc(100vh-90px)] lg:relative lg:w-1/5 lg:min-w-72 lg:h-lvh">
+           class="absolute z-10 p-4 bg-wedge-wood text-white rounded w-4/5 flex flex-col justify-around
+                min-h-[calc(100vh-90px)] lg:relative lg:w-1/6 lg:min-w-72 lg:h-lvh">
         <section class="text-center">
-            <img class="w-60 h-60 p-4 object-cover rounded-full mx-auto" src="../assets/img/profile-picture.png" alt="Profile Picture" />
-            <h2 class="text-4xl pr-5 font-bold text-aside-colour">Isaac Saleh</h2>
-            <p class="lg:text-2xl">Junior Software Developer</p>
+            <img class="w-3/5  p-4 object-cover rounded-full mx-auto
+                        lg:w-60 xl:h-60" src="../assets/img/profile-picture.png" alt="Profile Picture" />
+            <h2 class="text-7xl p-5 font-bold text-aside-colour
+                        xl:text-4xl">Isaac Saleh</h2>
+            <p class="text-6xl lg:text-2xl">Junior Software Developer</p>
         </section>
-        <nav class="text-center lg:my-14 lg:text-2xl">
+        <nav class="text-center text-6xl my-10 h-3/5 lg:my-14 lg:text-2xl">
             <ul>
-                <li class="p-2 hover:text-primary-text-dark">
+                <li class="my-5 p-1.5 hover:text-big-stone-80%">
                     <a class="" href="../index.html">Home</a>
                 </li>
-                <li class="p-2 hover:text-primary-text-dark">
+                <li class="my-5 p-1.5 hover:text-big-stone-80%">
                     <a class="" href="about.html">About</a>
                 </li>
-                <li class="p-2 hover:text-primary-text-dark">
+                <li class="my-5 p-1.5  hover:text-big-stone-80%">
                     <a class="" href="projects.html">Projects</a>
                 </li>
-                <li class="p-2 hover:text-primary-text-dark">
-                    <a class="" href="mywork.html">My Work</a>
-                </li>
-                <li class="p-2 hover:text-primary-text-dark">
+                <li class="my-5 p-1.5 underline text-big-stone-80% hover:text-big-stone-80%">
                     <a class="" href="resume.html">Resume</a>
                 </li>
-                <li class="p-2 hover:text-primary-text-dark">
+                <li class="my-5 p-1.5 hover:text-big-stone-80%">
                     <a class="" href="contact.html">Contact</a>
+                </li>
+                <li class="my-5 p-1.5 hover:text-big-stone-80%">
+                    <a class="" href="copyright.html">Copyright</a>
                 </li>
             </ul>
         </nav>
-        <footer class="mb-0">
+        <footer class="">
             <section class="text-center">
                 <a href="https://www.facebook.com/zac.saleh">
-                    <img class="w-10 m-2 inline"  src="../assets/img/f_logo_RGB-White_72.png" alt="Facebook icon" />
+                    <img class="w-16 lg:w-10 m-2 inline"  src="../assets/img/f_logo_RGB-White_72.png" alt="Facebook icon" />
                 </a>
                 <a href="https://www.instagram.com/thatzacfella/">
-                    <img class="w-10 m-2 inline"  src="../assets/img/Instagram_Glyph_White.png" alt="Instagram icon" />
+                    <img class="w-16 lg:w-10 m-2 inline"  src="../assets/img/Instagram_Glyph_White.png" alt="Instagram icon" />
                 </a>
                 <a
                         href="https://www.linkedin.com/in/isaac-saleh/?trk=people-guest_people_search-card&originalSubdomain=au">
-                    <img class="w-10 m-2 inline"  src="../assets/img/LI-In-Bug.png" alt="LinkedIn icon" />
+                    <img class="w-16 lg:w-10 m-2 inline"  src="../assets/img/LI-In-Bug.png" alt="LinkedIn icon" />
                 </a>
             </section>
-            <p class="text-center lg:text-xl m-5">&#169; ZacBoy Apps & Web Design</p>
+            <p class="text-center text-3xl lg:text-xl m-5">&#169; ZacBoy Apps & Web Design</p>
         </footer>
     </aside>
     <div class="flex flex-col w-full h-screen

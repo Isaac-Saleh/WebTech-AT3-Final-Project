@@ -12,60 +12,62 @@
         <img class="m-4 w-20 h-20"  src="../assets/img/hamburger.png" alt="Flyout Menu Icon"/>
     </button>
 </header>
-<main class="flex flex-col h-[calc(100lvh-80px)]
+<main class="flex flex-col h-[calc(100lvh-70px)]
             lg:flex-row lg:h-full">
     <aside id="flyoutMenu"
-           class="absolute z-10 p-4 bg-wedge-wood text-white rounded w-4/5
-                min-h-[calc(100vh-90px)] lg:relative lg:w-1/5 lg:min-w-72 lg:h-lvh">
+           class="absolute z-10 p-4 bg-wedge-wood text-white rounded w-4/5 flex flex-col justify-around
+                min-h-[calc(100vh-90px)] lg:relative lg:w-1/6 lg:min-w-72 lg:h-lvh">
         <section class="text-center">
-            <img class="w-60 h-60 p-4 object-cover rounded-full mx-auto" src="../assets/img/profile-picture.png" alt="Profile Picture" />
-            <h2 class="text-4xl pr-5 font-bold text-aside-colour">Isaac Saleh</h2>
-            <p class="lg:text-2xl">Junior Software Developer</p>
+            <img class="w-3/5  p-4 object-cover rounded-full mx-auto
+                        lg:w-60 xl:h-60" src="../assets/img/profile-picture.png" alt="Profile Picture" />
+            <h2 class="text-7xl p-5 font-bold text-aside-colour
+                        xl:text-4xl">Isaac Saleh</h2>
+            <p class="text-6xl lg:text-2xl">Junior Software Developer</p>
         </section>
-        <nav class="text-center lg:my-14 lg:text-2xl">
+        <nav class="text-center text-6xl my-10 h-3/5 lg:my-14 lg:text-2xl">
             <ul>
-                <li class="p-2 hover:text-primary-text-dark">
+                <li class="my-5 p-1.5 hover:text-big-stone-80%">
                     <a class="" href="../index.html">Home</a>
                 </li>
-                <li class="p-2 hover:text-primary-text-dark">
+                <li class="my-5 p-1.5 hover:text-big-stone-80%">
                     <a class="" href="about.html">About</a>
                 </li>
-                <li class="p-2 hover:text-primary-text-dark">
+                <li class="my-5 p-1.5 underline text-big-stone-80% hover:text-big-stone-80%">
                     <a class="" href="projects.html">Projects</a>
                 </li>
-                <li class="p-2 hover:text-primary-text-dark">
-                    <a class="" href="mywork.html">My Work</a>
-                </li>
-                <li class="p-2 hover:text-primary-text-dark">
+                <li class="my-5 p-1.5 hover:text-big-stone-80%">
                     <a class="" href="resume.html">Resume</a>
                 </li>
-                <li class="p-2 hover:text-primary-text-dark">
+                <li class="my-5 p-1.5 hover:text-big-stone-80%">
                     <a class="" href="contact.html">Contact</a>
+                </li>
+                <li class="my-5 p-1.5 hover:text-big-stone-80%">
+                    <a class="" href="copyright.html">Copyright</a>
                 </li>
             </ul>
         </nav>
-        <footer class="mb-0">
+        <footer class="">
             <section class="text-center">
                 <a href="https://www.facebook.com/zac.saleh">
-                    <img class="w-10 m-2 inline"  src="../assets/img/f_logo_RGB-White_72.png" alt="Facebook icon" />
+                    <img class="w-16 lg:w-10 m-2 inline"  src="../assets/img/f_logo_RGB-White_72.png" alt="Facebook icon" />
                 </a>
                 <a href="https://www.instagram.com/thatzacfella/">
-                    <img class="w-10 m-2 inline"  src="../assets/img/Instagram_Glyph_White.png" alt="Instagram icon" />
+                    <img class="w-16 lg:w-10 m-2 inline"  src="../assets/img/Instagram_Glyph_White.png" alt="Instagram icon" />
                 </a>
                 <a
                         href="https://www.linkedin.com/in/isaac-saleh/?trk=people-guest_people_search-card&originalSubdomain=au">
-                    <img class="w-10 m-2 inline"  src="../assets/img/LI-In-Bug.png" alt="LinkedIn icon" />
+                    <img class="w-16 lg:w-10 m-2 inline"  src="../assets/img/LI-In-Bug.png" alt="LinkedIn icon" />
                 </a>
             </section>
-            <p class="text-center lg:text-xl m-5">&#169; ZacBoy Apps & Web Design</p>
+            <p class="text-center text-3xl lg:text-xl m-5">&#169; ZacBoy Apps & Web Design</p>
         </footer>
     </aside>
     <div class="m-10 h-full"  id="main-container-projects">
         <h1 class="m-5 text-6xl text-left lg:text-4xl">Current Projects</h1>
-        <div class="flex flex-col justify-evenly items-center
+        <div class="flex flex-col items-center gap-24 pt-10
                     xl:grid xl:grid-rows-2 xl:grid-cols-2 xl:gap-12 lg:p-10">
 
-            <section class="project-card max-w-lg shadow-xl shadow-big-stone-80% rounded-3xl p-4 w-full h-64">
+            <section class="flex project-card max-w-lg shadow-xl shadow-big-stone-80% rounded-3xl p-4 w-full h-64">
                 <a id="translator-app-project"  class="w-full h-full flex flex-row" href="mywork.html?id=translator-app-info">
                     <section class="flex flex-col gap-6 p-4 w-2/3">
                     <h3 class="text-center text-4xl p-4">Translator App</h3>
@@ -74,7 +76,7 @@
                     <img class="w-1/3 h-28  object-contain mx-auto my-auto" src="../assets/img/c-sharp.png" alt="An image of a Python Logo">
                 </a>
             </section>
-            <section class="project-card max-w-lg shadow-xl shadow-big-stone-80% rounded-3xl  p-4 w-full h-64">
+            <section class="flex project-card max-w-lg shadow-xl shadow-big-stone-80% rounded-3xl  p-4 w-full h-64">
                 <a id="contract-manager-project" class="w-full h-full flex flex-row" href="mywork.html?id=contract-manager-info">
                     <section class="flex flex-col gap-6 p-4 w-2/3">
                         <h3 class="text-center text-4xl p-4">Contract Manager</h3>
@@ -84,7 +86,7 @@
                 </a>
 
             </section>
-            <section class="project-card max-w-lg shadow-xl shadow-big-stone-80% rounded-3xl  p-4 w-full h-64">
+            <section class="flex project-card max-w-lg shadow-xl shadow-big-stone-80% rounded-3xl  p-4 w-full h-64">
                 <a id="wordle-game-project" class="w-full h-full flex flex-row" href="mywork.html?id=wordle-game-info">
                     <section class="flex flex-col gap-6 p-4 w-2/3">
                         <h3 class="text-center text-4xl p-4">Wordle Game</h3>
@@ -93,7 +95,7 @@
                     <img class="w-1/3 h-28  object-contain mx-auto my-auto" src="../assets/img/python.png" alt="An image of a HTML Logo">
                 </a>
             </section>
-            <section class="project-card max-w-lg shadow-xl shadow-big-stone-80% rounded-3xl  p-4 w-full h-64">
+            <section class="flex project-card max-w-lg shadow-xl shadow-big-stone-80% rounded-3xl  p-4 w-full h-64">
                 <a id="sql-data-manager-project" class="w-full h-full flex flex-row" href="mywork.html?id=sql-data-manager-info">
                     <section class="flex flex-col gap-6 p-4 w-2/3">
                         <h3 class="text-center text-4xl p-4">SQL Data Manger</h3>

@@ -16,7 +16,7 @@
             lg:flex-row lg:h-full">
     <aside id="flyoutMenu"
            class="absolute z-10 p-4 bg-wedge-wood text-white rounded w-4/5 flex flex-col justify-around
-                min-h-[calc(100vh-90px)] lg:relative lg:w-1/6 lg:min-w-72 lg:h-lvh">
+                min-h-[calc(100vh-90px)] lg:relative lg:w-1/6 lg:min-w-72 lg:h-full">
         <section class="text-center">
             <img class="w-3/5  p-4 object-cover rounded-full mx-auto
                         lg:w-60 xl:h-60" src="../assets/img/profile-picture.png" alt="Profile Picture" />
@@ -62,10 +62,10 @@
             <p class="text-center text-3xl lg:text-xl m-5">&#169; ZacBoy Apps & Web Design</p>
         </footer>
     </aside>
-    <div class="flex flex-col justify-around w-full m-10">
+    <div class="flex flex-col justify-around w-full p-10">
         <section>
             <h2 class="text-6xl p-6
-                        lg:text-4xl">Contact Me</h2>
+                        lg:text-4xl lg:p-2">Contact Me</h2>
         </section>
         <section class="tracking-wider leading-relaxed ">
             <h3 class="text-5xl p-4
@@ -80,7 +80,7 @@
             <input class="text-2xl bg-grey-box w-3/5 rounded-xl p-6 m-4" name="name" type="text" placeholder="Name">
             <input class="text-2xl bg-grey-box w-3/5 rounded-xl p-6 m-4" name="email" type="text" placeholder="Email">
             <input class="text-2xl bg-grey-box w-3/5 rounded-xl p-6 m-4" name="subject" type="text" placeholder="Subject">
-            <textarea class="text-2xl bg-grey-box w-full  rounded-xl p-6 m-4" rows="8" name="message" type="text" placeholder="Message"></textarea>
+            <textarea class="text-2xl bg-grey-box w-4/5 rounded-xl p-6 m-4" rows="8" name="message" type="text" placeholder="Message"></textarea>
             <button class="bg-wedge-wood text-3xl rounded-3xl w-40 float-right p-4 m-4" type="submit" value="Submit">Submit</button>
         </form>
     </div>

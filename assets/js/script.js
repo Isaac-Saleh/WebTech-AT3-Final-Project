@@ -59,7 +59,7 @@ projectCards.forEach(function (projectCard) {
 });
 
 document.addEventListener( 'DOMContentLoaded', function() {
-    if(window.location.pathname === '/pages/mywork.html') {
+    if(window.location.pathname === '/WebTech-AT3-Final-Project/pages/mywork.html') {
 
         const targetID = getWindowID()
         document.getElementById(targetID).classList.remove('hidden');
